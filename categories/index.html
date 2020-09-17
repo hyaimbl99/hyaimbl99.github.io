@@ -63,6 +63,11 @@
 	        
 			</ul>
 		</nav>
+		<!-- 添加总文章数 -->
+		<nav>
+    总文章数 3
+</nav>
+<!-- 添加到此 -->
 		<nav class="header-smart-menu">
     		
     			
@@ -81,6 +86,22 @@
     			<a q-on="click: openSlider(e, 'music')" href="javascript:void(0)">[object Object]</a>
     			
             
+    			
+    			<a q-on="click: openSlider(e, 'declare_type')" href="javascript:void(0)">1</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'licensee_url')" href="javascript:void(0)">https://creativecommons.org/licenses/by-nc-sa/4.0/</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'licensee_name')" href="javascript:void(0)">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'licensee_img')" href="javascript:void(0)">https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png</a>
+    			
+            
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
@@ -88,10 +109,6 @@
 					<a class="github" target="_blank" href="https://github.com/hyaimbl99/Thefirsttemple.github.io" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="weibo" target="_blank" href="https://weibo.com/7167911683/profile?rightmod=1&wvr=6&mod=personinfo" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
 					<a class="qq" target="_blank" href="https://user.qzone.qq.com/1223279514/main" title="qq"><i class="icon-qq"></i></a>
 		        
@@ -139,10 +156,6 @@
 			        
 						<a class="weibo" target="_blank" href="https://weibo.com/7167911683/profile?rightmod=1&wvr=6&mod=personinfo" title="weibo"><i class="icon-weibo"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
-			        
 						<a class="qq" target="_blank" href="https://user.qzone.qq.com/1223279514/main" title="qq"><i class="icon-qq"></i></a>
 			        
 						<a class="bilibili" target="_blank" href="https://space.bilibili.com/355821112" title="bilibili"><i class="icon-bilibili"></i></a>
@@ -184,6 +197,18 @@
     </h1>
   
 
+        <!--显示阅读次数-->
+
+  <br/>
+  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+  <span class="icon-sort"></span>
+  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+    阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+  </span>
+  </a>
+
+<!--显示阅读次数完毕-->
+
         
         <a href="/categories/index.html" class="archive-article-date">
   	<time datetime="2020-09-17T03:18:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-17</time>
@@ -195,6 +220,25 @@
       
         
       
+<!-- 文章结尾加上结束语 -->
+
+       
+         <div class="essayending">
+           <div>
+            <div style="text-align:center;color: #ccc;font-size:22px;">
+            <br/>
+            <br/>
+ -------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------
+            <br/>
+            <br/>
+             <br/>
+             <br/>
+            </div>
+           </div>
+         </div>
+         
+
+  
 
       
         <div class="page-reward">
@@ -327,7 +371,7 @@
 
 
   
-  
+
   
 
   
@@ -352,6 +396,10 @@
     </div>
   </div>
 </footer>
+
+<!--页面点击小红心-->
+<script type="text/javascript" src="/love.js"></script>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -396,25 +444,57 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 25%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 12.5%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 25%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 12.5%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
       
         
       
-      <li style="width: 25%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 12.5%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
       
-      <li style="width: 25%" q-on="click: openSlider(e, 'music')"><a href="javascript:void(0)" q-class="active:music">[object Object]</a></li>
+      <li style="width: 12.5%" q-on="click: openSlider(e, 'music')"><a href="javascript:void(0)" q-class="active:music">[object Object]</a></li>
+      
+        
+      
+      <li style="width: 12.5%" q-on="click: openSlider(e, 'declare_type')"><a href="javascript:void(0)" q-class="active:declare_type">1</a></li>
+      
+        
+      
+      <li style="width: 12.5%" q-on="click: openSlider(e, 'licensee_url')"><a href="javascript:void(0)" q-class="active:licensee_url">https://creativecommons.org/licenses/by-nc-sa/4.0/</a></li>
+      
+        
+      
+      <li style="width: 12.5%" q-on="click: openSlider(e, 'licensee_name')"><a href="javascript:void(0)" q-class="active:licensee_name">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></li>
+      
+        
+      
+      <li style="width: 12.5%" q-on="click: openSlider(e, 'licensee_img')"><a href="javascript:void(0)" q-class="active:licensee_img">https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png</a></li>
       
         
     </ul>

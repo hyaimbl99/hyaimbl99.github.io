@@ -29,7 +29,7 @@
   <style type="text/css">
   
     #container.show {
-      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
+      background: linear-gradient(200deg,#1E90FF,#B0C4DE);
     }
   </style>
   
@@ -43,7 +43,7 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4d4d4d"></div>
+<div class="overlay" style="background: #00000"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -59,7 +59,9 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+				<li><a href="/tags">技术</a></li>
+	        
+				<li><a href="/tags">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -128,7 +130,7 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+  	<div class="overlay js-overlay" style="background: #00000"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -142,6 +144,8 @@
 			</hgroup>
 			
 			
+			
+				
 			
 				
 			
@@ -166,12 +170,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags">技术</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/tags">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -213,13 +219,48 @@
         <a href="/categories/index.html" class="archive-article-date">
   	<time datetime="2020-09-17T03:18:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-17</time>
 </a>
+        <!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
         
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 14px;color: grey">  字数统计:</span>
+        <!--这里样式可以自己定制-->
+        <span class="post-count" style="font-size: 14px;color: grey">0字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 14px;color: grey">  阅读时长:</span>
+        <span class="post-count" style="font-size: 14px;color: grey">1分钟</span>
+      </span>
+    </span>
+</div>
+          
+        <!-- 添加完成 -->
+
+        
+
+        <!-- 添加文章阅读次数统计  -->
+        
+  <span class="archive-article-date">
+      阅读量：<span id="busuanzi_value_page_pv">
+  </span>
+
+
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
         
       
+
+
 <!-- 文章结尾加上结束语 -->
 
        
@@ -250,7 +291,7 @@
             <span class="tooltip-content">
               <span class="tooltip-text">
                 <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢大佬<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
                     <div class="reward-box-item">
@@ -352,19 +393,6 @@
         </div>
         
         
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    目录，不存在的…
-                    </div>
-                </span>
-            </div>
-        </div>
-        
     </div>
 </aside>
 
@@ -395,6 +423,19 @@
       	</div>
     </div>
   </div>
+
+  
+      <!-- 不蒜子统计 -->
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <span id="busuanzi_container_site_pv" style='display:none'>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次
+      </span>
+      <span class="post-meta-divider">|</span>
+      <span id="busuanzi_container_site_uv" style='display:none'>
+            本站总访客数<span id="busuanzi_value_site_uv"></span>人次
+      </span>
+
+
 </footer>
 
 <!--页面点击小红心-->
@@ -413,7 +454,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 

@@ -65,7 +65,7 @@
 		</nav>
 		<!-- 添加总文章数 -->
 		<nav>
-    总文章数 3
+    总文章数 4
 </nav>
 <!-- 添加到此 -->
 		<nav class="header-smart-menu">
@@ -192,6 +192,165 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Html求学笔记2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/21/Html%E6%B1%82%E5%AD%A6%E7%AC%94%E8%AE%B02/">Html求学笔记2</a>
+    </h1>
+  
+
+        <!--显示阅读次数-->
+
+<!--显示阅读次数完毕-->
+
+        
+        <a href="/2020/09/21/Html%E6%B1%82%E5%AD%A6%E7%AC%94%E8%AE%B02/" class="archive-article-date">
+  	<time datetime="2020-09-21T08:26:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-21</time>
+</a>
+        <!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 14px;color: grey">  字数统计:</span>
+        <!--这里样式可以自己定制-->
+        <span class="post-count" style="font-size: 14px;color: grey">668字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 14px;color: grey">  阅读时长:</span>
+        <span class="post-count" style="font-size: 14px;color: grey">2分钟</span>
+      </span>
+    </span>
+</div>
+          
+        <!-- 添加完成 -->
+
+        
+
+        <!-- 添加文章阅读次数统计  -->
+        
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+      <!-- 引入标签代码 -->
+      
+        <h1 id="WEB开发-前端-后端"><a href="#WEB开发-前端-后端" class="headerlink" title="#WEB开发 = 前端 + 后端"></a>#WEB开发 = 前端 + 后端</h1><h2 id="常用的前端三贱客：HTML，CSS，JavaScript。"><a href="#常用的前端三贱客：HTML，CSS，JavaScript。" class="headerlink" title="##常用的前端三贱客：HTML，CSS，JavaScript。"></a>##常用的前端三贱客：HTML，CSS，JavaScript。</h2><hr>
+<p>后端：编写运行在服务器上的代码（数据库），主要是读写数据，文件，时间业务逻辑。</p>
+<hr>
+<p>现在主要讲的是HTML（Hyper Text Markup Language)中文叫做超文本标记语言。</p>
+<hr>
+<pre><code>              &lt;!-- more --&gt;</code></pre>
+<h3 id="1-meta元素-各种用法"><a href="#1-meta元素-各种用法" class="headerlink" title="###1.meta元素  各种用法"></a>###1.meta元素  各种用法</h3><p><code>&lt;meta charset = &quot;UTF-8&quot;&gt;</code>:声明字符编码</p>
+<h4 id="1）网页尺寸“自适应”"><a href="#1）网页尺寸“自适应”" class="headerlink" title="####1）网页尺寸“自适应”"></a>####1）网页尺寸“自适应”</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span> = <span class="string">&quot;viewport&quot;</span> <span class="attr">content</span> <span class="attr">width</span> =<span class="string">“decice-width,initial-scale</span>=<span class="string">1.0</span>&quot;&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>实现PC端或者手机端打开网页后的字体和图片尺寸相等。</p>
+<h4 id="2）搜索引擎优化"><a href="#2）搜索引擎优化" class="headerlink" title="####2）搜索引擎优化"></a>####2）搜索引擎优化</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;keywords&quot;</span> <span class="attr">content</span>=<span class="string">&quot;```&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>用content中的字符进行搜索则可以搜索到本页面，俗称：搜索关键字。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;description&quot;</span> <span class="attr">content</span>=<span class="string">&quot;```&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>搜索到之后的超链接下有一段描述文字，设定为content中间内容</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;author&quot;</span> <span class="attr">content</span>=<span class="string">&quot;```&quot;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>表明网页的作者</p>
+<h4 id="3）自动跳转"><a href="#3）自动跳转" class="headerlink" title="####3）自动跳转"></a>####3）自动跳转</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;rfresh&quot;</span> <span class="attr">content</span>=<span class="string">&quot;5;http:...&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>表示多少秒跳转到某个网站，分号后面接的就是网站链接，5的意思是设置为5秒后自动跳转</p>
+<p>更多meta元素用法参考：</p>
+<p><a href="https://www.runoob.com/tags/tag-meta.html" target="_blank">菜鸟</a></p>
+<hr>
+<h3 id="2-style元素：用法"><a href="#2-style元素：用法" class="headerlink" title="###2.style元素：用法"></a>###2.style元素：用法</h3><h4 id="1）页面定制样式"><a href="#1）页面定制样式" class="headerlink" title="####1）页面定制样式"></a>####1）页面定制样式</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span></span><br><span class="line">  h1 &#123;</span><br><span class="line"><span class="css">    <span class="selector-tag">color</span><span class="selector-pseudo">:red</span></span></span><br><span class="line"><span class="xml">  &#125; <span class="comment">&lt;!--在body中的h的内容上色 --&gt;</span></span></span><br><span class="line">  p &#123;</span><br><span class="line"><span class="css">      <span class="selector-tag">color</span><span class="selector-pseudo">:blue</span></span></span><br><span class="line">      text-align:center  //表示居中</span><br><span class="line">      margin-left:60%   //设置左外边距为60%</span><br><span class="line">      text-indent:32px  //设置锁进尺寸</span><br><span class="line">      font-size:16px    //设置字体尺寸</span><br><span class="line">      line-height:32px  //设置行间距</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- background:black //设置背景颜色--&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- background-image:url(&quot;../img/bc.png&quot;) //URL表示一个相对路径 ..表示上一文件夹--&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2）对图片："><a href="#2）对图片：" class="headerlink" title="####2）对图片："></a>####2）对图片：</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line">img &#123;</span><br><span class="line"><span class="css"><span class="selector-tag">position</span><span class="selector-pseudo">:absolute</span>;</span></span><br><span class="line"><span class="css"><span class="selector-tag">left</span><span class="selector-pseudo">:50</span>%;</span></span><br><span class="line"><span class="css"><span class="selector-tag">margin-left</span><span class="selector-pseudo">:-181px</span>;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- media属性：为制定设备定制样式 --&gt;</span></span><br><span class="line">例如：</span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">media</span>=<span class="string">&quot;screen cmd&lt;min-width:512px) and (max-width:1024px)&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 在计算机屏幕浏览下处于512像素到1024像素之间（指浏览器尺寸大小） --&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3）链接外部样式表"><a href="#3）链接外部样式表" class="headerlink" title="####3）链接外部样式表"></a>####3）链接外部样式表</h4><p>除了可以在style元素中加，还可以将CSS样式表保存为外部文件，用**<em>link**</em>元素将其链接进来</p>
+<p><strong><em>link</em></strong>元素，rel属性是必要的，说明了当前文档和被链接资源的关系</p>
+<p>例如：</p>
+<p><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;...&quot;</code></p>
+<p><strong><em>设置网站图标</em></strong>  </p>
+<p><code>&lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;...&quot;&gt;</code></p>
+<!-- 一般是16*16或32*32的小图标 -->
+
+<p><strong><em>设置路径</em></strong></p>
+<p><code>&lt;base href=&quot;...&quot; target=&quot;_blank&quot;&gt;</code></p>
+<p><strong>href中设置的是基准URL，在<body>中用<a>元素设置超链接可以直接偷懒</strong></p>
+<!-- 作用：影响相对路径格式  绝对路径：完整的把路径写出来 -->
+
+
+
+      
+
+
+<!-- 文章结尾加上结束语 -->
+
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">tech</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Html</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/09/21/Html%E6%B1%82%E5%AD%A6%E7%AC%94%E8%AE%B02/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Html5求学笔记1-0" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -270,11 +429,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Html</a>
         		</li>
       		
 		</ul>
@@ -710,6 +865,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Html</a>
               </li>
             
             <div class="clearfix"></div>
